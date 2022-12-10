@@ -46,12 +46,28 @@ button:hover {
 
 .about__image {
     width: 500px;
+    position: relative;
+}
+
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
 }
 
 .about__sun-image {
     width: 100px;
     height: 100px;
+    position: absolute;
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
 
 .about {
     display: flex;
@@ -176,3 +192,4 @@ footer h3 {
 .footer__links a {
     margin-bottom: 15px;
 }
+
