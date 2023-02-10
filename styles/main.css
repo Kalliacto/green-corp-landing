@@ -40,7 +40,6 @@ button {
     cursor: pointer;
     box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px;
-   
 }
 
 button:hover {
@@ -79,6 +78,7 @@ button:hover {
 
 
 .about {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -110,6 +110,13 @@ button:hover {
 .about__info {
     max-width: 550px;
 }
+.orb-canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    /* width: 100%; */
+}
 /*-------------- features start---------- */
 .features {
     background-color: #fff;
@@ -125,6 +132,7 @@ button:hover {
     padding: 35px 40px 25px 40px;
     border: 1px solid #D9E4E6;
     border-radius: 5px;
+    background: #FFFFFF;
 }
 .card__logo {
     width: 100px;
@@ -220,12 +228,11 @@ button:hover {
     background-color: #fff;
     padding: 30px 40px;
     font-size: 20px;
-    line-height: 22px;
+    line-height: 26px;
     font-weight: 500;
     border-radius: 25px;
 }
 .promo__right-card p {
-    position: relative;
     opacity: 0.8;
 }
 .promo__right-card p::before {
