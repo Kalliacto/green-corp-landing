@@ -20,7 +20,7 @@ function initIncreaseNumberAnimation() {
     const element = document.querySelector('.features__clients-count');
     
     increaseNumberAnimationStep(0, element, 5000);
-    setTimeout(initIncreaseNumberAnimation, 7000);
+    setTimeout(initIncreaseNumberAnimation, 9000);
 }
 
 initIncreaseNumberAnimation();
