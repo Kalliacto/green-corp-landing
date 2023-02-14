@@ -1,4 +1,4 @@
-const INCREASE_NUMBER_ANIMATION_SPEED = 75;
+const INCREASE_NUMBER_ANIMATION_SPEED = 105;
 
 function increaseNumberAnimationStep (i, element, endNumber) {
     if (i <= endNumber) {
@@ -20,6 +20,8 @@ function initIncreaseNumberAnimation() {
     const element = document.querySelector('.features__clients-count');
     
     increaseNumberAnimationStep(0, element, 5000);
+    setTimeout(initIncreaseNumberAnimation, 7000);
 }
 
 initIncreaseNumberAnimation();
+
