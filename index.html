@@ -18,7 +18,7 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
     <header>
         <img class="header__logo" src='img/logo.svg'>
         <div class="header__controls">
-            <a href="#contacts">Контакты</a>
+            <a href="#form">Контакты</a>
             <button>Заказать</button>
         </div>
     </header>
@@ -27,7 +27,7 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
         <div class="about__info  animate__animated animate__fadeInLeft animate__slow">
             <h1 class="">Солнечные панели GreenRobotic</h1>
             <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-            <button>Узнать подробнее <i class="fas fa-angle-right"></i></button>
+            <button class="more-button" href="#features">Узнать подробнее <i class="fas fa-angle-right"></i></button>
         </div>
         <div class="about__images animate__animated animate__fadeInRight animate__slow">
             <img class="about__sun-image" src="img/sun.png">
@@ -100,11 +100,11 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
         </div>
     </section>
 
-    <section class="form">
+    <section class="form" id="form">
         <div class="form__container">
             <h1>Оставьте свои контакты</h1>
             <p>Поможем подобрать модель. Выбрать удобный вариант доставки и установки. Гарантия возврата денег</p>
-            <form id="form">
+            <form id="formForm">
                 <div class="form__group">
                     <label for="name">Ваше имя</label>
                     <input type="text" placeholder="Введите имя" id="name">
@@ -169,6 +169,7 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
             GreenCorp © 2021
         </div>
     </footer>
+
     <script src="styles/fontawesome-free-6.2.1-web/js/all.min.js"></script>
 </body>
 

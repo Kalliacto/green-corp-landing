@@ -15,7 +15,7 @@ function increaseNumberAnimationStep (i, element, endNumber) {
             increaseNumberAnimationStep(i, element, endNumber);
             }, INCREASE_NUMBER_ANIMATION_SPEED);
         }
-    }
+    }``
 
 function initIncreaseNumberAnimation() {
     const element = document.querySelector('.features__clients-count');
@@ -43,3 +43,31 @@ function updateScroll() {
 }
 
 window.addEventListener('scroll', updateScroll );
+
+// ----------------------------------------------------------------
+
+function addSmoothScroll(anchor) {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+        });
+    });
+}
+
+function onLinkClick(event) {
+    event.preventDefault();
+
+    document.querySelector(event.target.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
+addSmoothScroll(document.querySelector('.more-button'));
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    addSmoothScroll(anchor);
+});
+
+
